@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+/*Botões*/
+
+#buttons-container {
+  margin-bottom: 40px;
+}
+
+#buttons-container button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+/*Jogo*/
+#container {
+  width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*centralizar uma div na tela*/
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  border: 5px solid black;
+  height: 100px;
+  box-sizing: border-box;
+  flex: 1 1 33%; /*garantir as 3 divs por linha*/
+}
+
+#block-1 {
+  border-top: none;
+  border-left: none;
+}
+#block-2 {
+  border-top: none;
+}
+#block-3 {
+  border-top: none;
+  border-right: none;
+}
+#block-4 {
+  border-left: none;
+}
+#block-6 {
+  border-right: none;
+}
+#block-7 {
+  border-bottom: none;
+  border-left: none;
+}
+#block-8 {
+  border-bottom: none;
+}
+#block-9 {
+  border-bottom: none;
+  border-right: none;
+}
+
+/*Símbolos*/
+
+.x {
+  font-size: 65px;
+  color: rgb(192, 151, 151);
+  display: inline-block;
+}
+
+.o {
+  width: 45px;
+  height: 45px;
+  border: 5px solid rgb(154, 187, 154);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*Placar*/
+
+#scoreboard-container {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 25px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#x-scoreboard {
+  color: rgb(192, 151, 151);
+  margin-right: 3px;
+}
+
+#o-scoreboard {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid rgb(154, 187, 154);
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.score-box {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/*Mensagem*/
+
+#message p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 232px;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background-color: black;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+  display: none;
+}
